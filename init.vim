@@ -30,6 +30,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'chrisbra/Colorizer'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
 
@@ -47,12 +48,13 @@ set nu
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme='violet'
+let g:airline_theme='solarized'
 
 set guicursor=n-v-c:block-Cursor
 set guicursor+=i:ver100-iCursor
 
-colorscheme horizon
+set background=dark
+colorscheme nord
 
 """""""""""""""""""
 " Functionality
