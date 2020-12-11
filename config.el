@@ -10,7 +10,7 @@
       user-mail-address "john.short.tj@gmail.com"
 
       doom-scratch-inital-major-mode 'org-mode
-      doom-theme 'doom-horizon
+      doom-theme 'doom-nord
       treemacs-width 32
 
       display-line-numbers-type 'relative
@@ -70,7 +70,7 @@
 ;;
 ;;; Language customizations
 
-(custom-theme-set-faces! 'doom-nord
+(custom-theme-set-faces! 'doom-dracula
   `(markdown-code-face :background ,(doom-darken 'bg 0.075))
   `(font-lock-variable-name-face :foreground ,(doom-lighten 'magenta 0.6)))
 

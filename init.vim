@@ -48,7 +48,7 @@ set nu
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme='solarized'
+let g:airline_theme='nord'
 
 set guicursor=n-v-c:block-Cursor
 set guicursor+=i:ver100-iCursor
