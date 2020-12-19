@@ -77,3 +77,30 @@
 ;;
 ;;; Mappings
 (setq x-super-keysym 'meta)
+
+;; unmapping
+(map! :after evil
+      "C-e" nil)
+
+(map! :after evil
+      :map evil-motion-state-map
+      "C-f" nil)
+
+(map! "C-e" #'end-of-line)
+
+(map! :prefix "C-f"
+   :desc "New workspace" :n "c" #'+workspace/new
+   :desc "Delete workspace" :n "x" #'+workspace/delete
+   :desc "Rename workspace" :n "r" #'+workspace:rename
+   :desc "Switch workspace" :n "." #'+workspace/switch-to
+      :desc "Next workspace" :n "n" #'+workspace/switch-right
+      :desc "Previous workspace" :n "p" #'+workspace/switch-left
+      :desc "Switch to 1st workspace"  :n "0"   (λ! (+workspace/switch-to 0))
+      :desc "Switch to 2nd workspace"  :n "1"   (λ! (+workspace/switch-to 1))
+      :desc "Switch to 3rd workspace"  :n "2"   (λ! (+workspace/switch-to 2))
+      :desc "Switch to 4th workspace"  :n "3"   (λ! (+workspace/switch-to 3))
+      :desc "Switch to 5th workspace"  :n "4"   (λ! (+workspace/switch-to 4))
+      :desc "Switch to 6th workspace"  :n "5"   (λ! (+workspace/switch-to 5))
+      :desc "Switch to 7th workspace"  :n "6"   (λ! (+workspace/switch-to 6))
+      :desc "Switch to 8th workspace"  :n "7"   (λ! (+workspace/switch-to 7))
+      :desc "Switch to 9th workspace"  :n "8"   (λ! (+workspace/switch-to 8)))
