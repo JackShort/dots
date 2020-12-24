@@ -1,3 +1,2 @@
-feh --bg-fill ~/Pictures/wall.jpeg
-xsetroot -name "close this you idiot"
+feh --bg-fill ~/Pictures/wall.jpg
 xcape -e 'Control_L=Escape'
